@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<remote  name="github"
+          	fetch="https://github.com/" />			
+
+        <remote name="munchdevs-github" 
+                fetch="https://github.com/munch-devs"
+                revision="vic"
+                clone-depth="1" />
+        
+        <remote name="munchdevs-codeberg"
+                fetch="https://codeberg.org/munch-devs"
+                revision="vic" 
+                clone-depth="1" />
+
+        <remote  name="hdzungx-gitea"
+                fetch="https://gitea.com/hdzungx"
+                revision="sixteen" />
+
+        <remote name="cherishosmunch-github" 
+                fetch="https://github.com/CherishOS-Munch"
+                revision="sixteen" />
+
+        <!-- Device Trees -->
+        <project path="device/xiaomi/munch" name="android_device_xiaomi_munch" remote="munchdevs-github" revision="cherish" />
+
+        <!-- Vendor Trees-->
+        <project path="vendor/xiaomi/munch" name="android_vendor_xiaomi_munch" remote="munchdevs-github" revision="16" />
+
+        <!-- Kernel-->
+        <project path="kernel/xiaomi/munch" name="kernel_xiaomi_munch" remote="munchdevs-github" revision="munch-ksu" />
+
+        <!-- Firmware-->
+        <project path="vendor/xiaomi/munch-firmware" name="android_vendor_xiaomi_munch-firmware" remote="munchdevs-codeberg" />
+
+        <!-- Miui Camera-->
+        <project path="vendor/xiaomi/miuicamera" name="android_vendor_xiaomi_miuicamera" remote="munchdevs-codeberg" />
+
+        <!-- Hardware Dolby-->
+        <project path="hardware/dolby" name="android_hardware_dolby" remote="munchdevs-github" />
+
+        <!-- Private Key-->
+        <project path="vendor/private-keys" name="private-keys" remote="munchdevs-github" />
+
+	<!--<project path="hardware/qcom-caf/sm8150/display" name="android_hardware_qcom_display" revision="16-sm8150" remote="munchdevs-github" />-->
+        <remove-project path="frameworks/base" name="platform_frameworks_base" />
+        <project path="frameworks/base" name="platform_frameworks_base" remote="cherishosmunch-github" />
+
+        <remove-project path="packages/apps/Settings" name="android_packages_apps_Settings" />
+        <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="cherishosmunch-github" />
+
+        <remove-project path="packages/apps/CherishSettings" name="android_packages_apps_Cherish" />
+        <project path="packages/apps/CherishSettings" name="android_packages_apps_Cherish" remote="cherishosmunch-github" />
+
+        <remove-project path="hardware/xiaomi" name="android_hardware_xiaomi" />
+        <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="munchdevs-github" revision="16" />
+
+        <remove-project path="packages/apps/GameSpace" name="android_packages_apps_GameSpace" />
+        <project path="packages/apps/GameSpace" name="android_packages_apps_GameSpace" remote="cherishosmunch-github" />
+
+        <remove-project path="vendor/cherish" name="android_vendor_cherish" />
+        <project path="vendor/cherish" name="android_vendor_cherish" remote="cherishosmunch-github"  />
+
+        <remove-project path="vendor/themes" name="android_vendor_themes" />
+        <project path="vendor/themes" name="android_vendor_themes" remote="cherishosmunch-github"  />
+
+        <project path="packages/apps/OmniStyle" name="android_packages_apps_OmniStyle" remote="cherishosmunch-github" />
+        <project path="external/FadingEdgeLayout" name="android_external_FadingEdgeLayout" remote="cherishosmunch-github" />
+  </manifest>
