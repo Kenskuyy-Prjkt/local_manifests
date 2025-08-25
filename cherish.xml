@@ -60,10 +60,4 @@
 
         <remove-project path="vendor/cherish" name="android_vendor_cherish" />
         <project path="vendor/cherish" name="android_vendor_cherish" remote="cherishosmunch-github"  />
-
-        <remove-project path="vendor/themes" name="android_vendor_themes" />
-        <project path="vendor/themes" name="android_vendor_themes" remote="cherishosmunch-github"  />
-
-        <project path="packages/apps/OmniStyle" name="android_packages_apps_OmniStyle" remote="cherishosmunch-github" />
-        <project path="external/FadingEdgeLayout" name="android_external_FadingEdgeLayout" remote="cherishosmunch-github" />
   </manifest>
