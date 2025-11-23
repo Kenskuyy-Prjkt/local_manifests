@@ -58,7 +58,7 @@
              revision="wip-susfs" />
 
     <project name="private-keys"
-             path="vendor/evolution-priv/keys"
+             path="vendor/lunaris-priv/keys"
              remote="kenaidi01"
              revision="luna" />
 </manifest>
