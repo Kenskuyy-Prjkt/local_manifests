@@ -14,7 +14,7 @@
     <project name="android_device_xiaomi_munch"
              path="device/xiaomi/munch"
              remote="Kenskuyy-Prjkt"
-             revision="luna" />
+             revision="pos" />
 
     <project name="android_vendor_xiaomi_munch"
              path="vendor/xiaomi/munch"
@@ -58,8 +58,8 @@
              revision="wip-susfs" />
 
     <project name="private-keys"
-             path="vendor/evolution-priv/keys"
+             path="vendor/private-keys/keys"
              remote="kenaidi01"
-             revision="luna" />
+             revision="others" />
 </manifest>
 
